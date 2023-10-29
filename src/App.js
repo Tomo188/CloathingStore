@@ -1,10 +1,18 @@
 import "./App.css";
-
-import DirectoryCategory from "./components/directory-item/directory-category";
+import {Routes,Route}from "react-router-dom"
+import Home from "./routes/home/home.component";
+import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
 function App() {
  
   return (
-   <DirectoryCategory />
+    <>
+    <Header />
+    <Routes>
+      <Route path="/" element={ <Home />} />
+    </Routes>
+   <Footer />
+    </>
   );
 }
 

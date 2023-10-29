@@ -1,0 +1,31 @@
+.header{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+     h1{
+        
+        padding: 5px;
+        font-size: 40px;
+        font-weight: bold;
+        
+        box-shadow: 10px 10px  10px 0px black;
+        // background-color:rgb(238, 224, 187);
+        border:3px solid black;
+        border-radius: 10px;
+        
+
+     }
+     &:hover{
+        
+        h1{transform: scale(1.2);
+        transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);}
+     }
+   
+    // background-image: url("https://i.pinimg.com/564x/ba/d3/bb/bad3bb0cab64c0dfe58ea5cbf64dc989.jpg");
+    // background-image: url("https://i.pinimg.com/564x/8c/16/79/8c1679ebc12de9001924b488f9cd8710.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px;
+}
