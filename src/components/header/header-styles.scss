@@ -1,26 +1,80 @@
+$borderRadius:10px;
+$borderBox:3px solid black;
+$borderBoxShadow:10px 10px  10px 0px black;
+$MarginBottom:10px;
+
 .header{
-    height: 300px;
+    height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-   
+     flex-direction: column;
+     justify-content: space-between;
+    .navigation_header{
+      margin-top:10px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      box-shadow:var(--borderBoxShadow);
+      padding: 5px;
+      background-color:rgb(108, 242, 247);
+      border:var(--borderBox);
+      border-radius:$borderRadius;
+      margin-bottom:$MarginBottom;
+      opacity: var(--opacityBeforeHover);
+      justify-content: space-around;
+      
+      a{
+         text-emphasis: none;
+         color: black;
+         text-decoration-line: none;
+         font-size: 18px;
+         font-weight:800;
+         border: 2px solid black;
+         padding: 3px;
+         border-radius: 3px;
+         box-shadow: 3px 3px 1px 1px grey;
+         background-color: white;
+         
+      }
+      a:hover{
+         cursor: pointer;
+         
+      }
+      a:active{
+         cursor:progress;
+         transform: scale(0.9);
+         transition: box-shadow 0.5s ease-in-out;
+         transition: transform 0.2s ease-in-out;
+         box-shadow: 0 0 0 0 ;
+         
+      }
+    }&:hover{
+      
+      .navigation_header{
+         opacity: var(--opacityAfterHover);
+         
+         
+         
+         
+      }
+    }
      h1{
+      text-align: center;
         
-        padding: 5px;
         font-size: 40px;
         font-weight: bold;
         
-        box-shadow: 10px 10px  10px 0px black;
+        box-shadow:var(--borderBoxShadow);
         // background-color:rgb(238, 224, 187);
-        border:3px solid black;
-        border-radius: 10px;
+        border:var(--borderBox);
+        border-radius:$borderRadius;
+        background-color: rgba(245, 245, 28,0.7);
         
 
      }
      &:hover{
-        
-        h1{transform: scale(1.2);
+        h1:hover{transform: scale(1.2) ;
         transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);}
+        
      }
    
     // background-image: url("https://i.pinimg.com/564x/ba/d3/bb/bad3bb0cab64c0dfe58ea5cbf64dc989.jpg");

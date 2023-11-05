@@ -1,7 +1,10 @@
-import DirectoryCategory from "../../components/directory-item/directory-category"
 
-const Home=()=>{
+import { Outlet } from "react-router-dom"
+const Navigation=()=>{
     return (
-        <DirectoryCategory />)
+        <div>
+            <Outlet />
+        </div>
+        )
 }
-export default Home
+export default Navigation

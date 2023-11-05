@@ -1,3 +1,17 @@
+:root{
+--borderRadius:10px;
+--borderBox:3px solid black;
+--borderBoxShadow:10px 10px  10px 0px black;
+--borderBoxShadow_inside:3px 3px  6px 4px rgb(18, 19, 18);
+--MarginBottom:10px;
+--transform:scale(1.1);
+--transformH2:scale(1.2);  
+--transformTransition:transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+--opacityBeforeHover:0.7;
+--opacityAfterHover:0.9;
+        
+}
+
 .App {
   text-align: center;
 }
