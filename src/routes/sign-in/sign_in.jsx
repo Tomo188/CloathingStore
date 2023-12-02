@@ -1,17 +1,11 @@
-import { signInWithGooglePopup,createUserDocumnetFromAuth } from "../../util/firebase/firebase"
-
+import SignInWithGoogle from "./components/sign_in_with_google"
+import SignInWithEmailAndPassword from "./components/sign_in_with_email_and_password"
 const SignIn=()=>{
-    const logGoogleyUser=async()=>{
-        const {user}=await signInWithGooglePopup()
-        const userDocRef=await createUserDocumnetFromAuth(user)
-    }
-    
+   
     return(
         <div>
-            <h2>Test Sign in Component</h2>
-            <button onClick={logGoogleyUser}>
-                Sign in with google popup
-            </button>
+       <SignInWithGoogle />
+       <SignInWithEmailAndPassword />
         </div>
     )
 }
