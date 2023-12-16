@@ -5,7 +5,7 @@ import {
 } from "../../../util/firebase/firebase";
 import Input from "./input/input";
 import "./sign_in.styles.scss"
-import SignInWithGoogle from "./sign_in_with_google";
+
 import Button from "../../../components/button/button.component";
 const SignInWithEmailAndPassword = () => {
   const [name, setName] = useState("");
@@ -61,7 +61,7 @@ const SignInWithEmailAndPassword = () => {
           onChangeFun={(e) => setConfirmPassword(e.target.value)}
           type={"password"}
         />
-       <Button type="submit">Sign in</Button>
+       <Button type="submit" buttonType={"inverted"}>Sign in</Button>
       </form>
     </div>
   );

@@ -1,6 +1,6 @@
 // import { getRedirectResult } from "firebase/auth"
 import Button from "../../../components/button/button.component"
-import { auth,signInWithGooglePopup,signInWithGoogleRedirect,createUserDocumnetFromAuth } from "../../../util/firebase/firebase"
+import { signInWithGooglePopup,createUserDocumnetFromAuth } from "../../../util/firebase/firebase"
 import "./sign_in.styles.scss"
 // import { useEffect             } from "react"
 const SignInWithGoogle=()=>{
@@ -15,7 +15,7 @@ const SignInWithGoogle=()=>{
     // },[])
     const logGoogleUser=async()=>{
         const {user}=await signInWithGooglePopup()
-        const userDocRef=await createUserDocumnetFromAuth(user)
+        await createUserDocumnetFromAuth(user)
     }
     // const logGoogleRedirectUser=async()=>{
     //     const {user}=await signInWithGoogleRedirect()
@@ -23,7 +23,7 @@ const SignInWithGoogle=()=>{
     
     return(
            <>
-             <Button  />
+             <Button type="button" onClick={logGoogleUser} buttonType={"google"}> google </Button>
             {/* <button onClick={signInWithGoogleRedirect}>
                 Sign in with google redirect
             </button> */}

@@ -57,4 +57,9 @@ const firebaseConfig = {
 
       
   }
+  export const userSignInWithEmailAndPassword=async (email,password)=>{
+  if(!email || !password)return "there is no password or email !"
+   const userDoc=await signInWithEmailAndPassword(auth,email,password)
+   return userDoc
+  }
   export default app;

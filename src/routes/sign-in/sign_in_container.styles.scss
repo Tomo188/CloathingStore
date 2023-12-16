@@ -1,6 +1,11 @@
 .sign-up-container-main{
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     align-items: center;
     justify-content: space-evenly;
+    background-color: rgb(142, 155, 163);
+    box-shadow: var(--borderBoxShadow);
+    border: var(--borderBox);
+    border-radius: var(--borderRadius);
+    margin: 0 7.5px 15px;
 }
